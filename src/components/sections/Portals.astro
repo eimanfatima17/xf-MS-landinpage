@@ -1,0 +1,151 @@
+<section id="portals">
+  <div class="shell">
+    <div class="head reveal">
+      <span class="section-label">Four portals</span>
+      <h2>Everyone logs into their own part of the institute.</h2>
+      <p>Admins, branch managers, instructors and students each get a portal built for what that role actually does — and nothing they shouldn't see.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Portals">
+      <button class="tab" role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="true" tabindex="0" data-tab="admin">Admin <span class="route">/admin</span></button>
+      <button class="tab" role="tab" id="tab-manager" aria-controls="panel-manager" aria-selected="false" tabindex="-1" data-tab="manager">Manager <span class="route">/manager</span></button>
+      <button class="tab" role="tab" id="tab-instructor" aria-controls="panel-instructor" aria-selected="false" tabindex="-1" data-tab="instructor">Instructor <span class="route">/instructor</span></button>
+      <button class="tab" role="tab" id="tab-student" aria-controls="panel-student" aria-selected="false" tabindex="-1" data-tab="student">Student <span class="route">/student</span></button>
+    </div>
+
+    <div class="panel on" id="panel-admin" role="tabpanel" aria-labelledby="tab-admin" tabindex="0" data-panel="admin">
+      <div>
+        <h3>Runs the whole institute</h3>
+        <p class="lede">The only portal that sees every branch at once. Enrollments, collection and net position on one screen, filtered by any date range.</p>
+        <ul class="plist">
+          <li><b>Branches and staff</b> — create branch admins and scope what each one can reach</li>
+          <li><b>Academics</b> — courses, batches, instructors, and the LMS library</li>
+          <li><b>Money</b> — fees, invoices, expenses, payroll and commission accruals</li>
+          <li><b>Alerts and AI</b> — SMTP alerts, email logs, and a built-in assistant that answers from your own data</li>
+        </ul>
+      </div>
+      <div class="frame reveal">
+        <div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">/admin/reports</span></div>
+        <div class="frame-body">
+          <div class="pane-head"><div><h4>Reports</h4><p class="micro">Enrollment trend · Lead funnel · Finance breakdown</p></div><span class="chip">Export PDF</span></div>
+          <div class="stat-row two">
+            <div class="statcard"><div class="top"><div><div class="label">Collected</div><div class="value">Rs 4.82M</div><span class="badge">+12.4%</span></div><div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div></div></div>
+            <div class="statcard"><div class="top"><div><div class="label">Outstanding</div><div class="value">Rs 0.61M</div><span class="badge">47 students</span></div><div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div></div></div>
+          </div>
+          <div class="chartcard">
+            <div class="chart-top"><h5>Enrollment trend</h5><span class="chip">6 months</span></div>
+            <div class="bars">
+              <div class="bar"><span data-h="38"></span></div>
+              <div class="bar"><span data-h="52"></span></div>
+              <div class="bar"><span data-h="46"></span></div>
+              <div class="bar"><span data-h="71"></span></div>
+              <div class="bar"><span data-h="83"></span></div>
+              <div class="bar"><span data-h="96"></span></div>
+            </div>
+            <div class="bar-x"><i>Apr</i><i>May</i><i>Jun</i><i>Jul</i><i>Aug</i><i>Sep</i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-manager" role="tabpanel" aria-labelledby="tab-manager" tabindex="0" data-panel="manager">
+      <div>
+        <h3>Runs the day-to-day, without the finance keys</h3>
+        <p class="lede">A branch coordinator gets real visibility into admissions without ever touching payroll or system settings.</p>
+        <ul class="plist">
+          <li><b>Pipeline</b> — drag a lead between stages, from Unattended right through to Admission Done</li>
+          <li><b>Outreach</b> — one tap opens WhatsApp with the lead's number already filled in</li>
+          <li><b>Bulk import</b> — upload an Excel or CSV against a downloadable template, with a row-by-row import summary</li>
+          <li><b>Scoped by design</b> — no finance, no payroll, no institute-wide controls</li>
+        </ul>
+      </div>
+      <div class="frame">
+        <div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">/manager/leads</span></div>
+        <div class="frame-body">
+          <div class="pane-head"><div><h4>Lead pipeline</h4><p class="micro">Gulberg branch · 18 open leads</p></div><span class="chip">Conversion 34%</span></div>
+          <div class="kanban">
+            <div>
+              <div class="col-head"><h5>Unattended</h5><span class="n">6</span></div>
+              <div class="col-rail"></div>
+              <div class="lead"><div class="nm">Hira Saleem</div><div class="mt">0301-4455XXX · Web Dev</div></div>
+              <div class="lead"><div class="nm">Bilal Tariq</div><div class="mt">0333-2211XXX · Graphics</div></div>
+            </div>
+            <div>
+              <div class="col-head"><h5>Attended</h5><span class="n">5</span></div>
+              <div class="col-rail"></div>
+              <div class="lead"><div class="nm">Ayesha Nadeem</div><div class="mt">Called 14 Sep · Amazon VA</div></div>
+              <div class="lead"><div class="nm">Usman Javed</div><div class="mt">Called 15 Sep · Web Dev</div></div>
+            </div>
+            <div>
+              <div class="col-head"><h5>Demo Booked</h5><span class="n">4</span></div>
+              <div class="col-rail hot"></div>
+              <div class="lead"><div class="nm">Fatima Zahra</div><div class="mt">17 Sep, 4:00 PM</div></div>
+            </div>
+            <div>
+              <div class="col-head"><h5>Admission Done</h5><span class="n">3</span></div>
+              <div class="col-rail hot"></div>
+              <div class="lead"><div class="nm">Hamza Iqbal</div><div class="mt">Batch WD-14 · Rs 24,000</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-instructor" role="tabpanel" aria-labelledby="tab-instructor" tabindex="0" data-panel="instructor">
+      <div>
+        <h3>A teaching workspace, not an admin job</h3>
+        <p class="lede">An instructor opens one portal and sees their workload, their classes and their pay. Nothing else to dig through.</p>
+        <ul class="plist">
+          <li><b>Attendance</b> — mark Present, Absent or Leave per student, or set the whole batch at once</li>
+          <li><b>Assignments</b> — set due dates for a batch, then see exactly who has turned work in</li>
+          <li><b>Virtual classes</b> — schedule a session and generate a meeting link in one click</li>
+          <li><b>Payslips</b> — every month's slip downloadable from the same login</li>
+        </ul>
+      </div>
+      <div class="frame">
+        <div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">/instructor/attendance</span></div>
+        <div class="frame-body">
+          <div class="pane-head"><div><h4>Attendance</h4><p class="micro">Web Development · Batch WD-12 · 16 Sep</p></div><span class="chip">Mark all present</span></div>
+          <div class="roster">
+            <div class="roster-row"><span class="avatar">AK</span><span class="nm">Ahsan Khalid</span><span class="id">STU-0412</span>
+              <div class="seg"><button aria-pressed="true">P</button><button aria-pressed="false">A</button><button aria-pressed="false">L</button></div></div>
+            <div class="roster-row"><span class="avatar">MZ</span><span class="nm">Mahnoor Zubair</span><span class="id">STU-0418</span>
+              <div class="seg"><button aria-pressed="true">P</button><button aria-pressed="false">A</button><button aria-pressed="false">L</button></div></div>
+            <div class="roster-row"><span class="avatar">SR</span><span class="nm">Saad Rehman</span><span class="id">STU-0423</span>
+              <div class="seg"><button aria-pressed="false">P</button><button aria-pressed="true">A</button><button aria-pressed="false">L</button></div></div>
+            <div class="roster-row"><span class="avatar">IF</span><span class="nm">Iqra Farooq</span><span class="id">STU-0431</span>
+              <div class="seg"><button aria-pressed="false">P</button><button aria-pressed="false">A</button><button aria-pressed="true">L</button></div></div>
+            <div class="roster-row"><span class="avatar">TA</span><span class="nm">Talha Ashraf</span><span class="id">STU-0440</span>
+              <div class="seg"><button aria-pressed="true">P</button><button aria-pressed="false">A</button><button aria-pressed="false">L</button></div></div>
+          </div>
+          <p class="micro hint">Try the P / A / L buttons — that is the real control from the portal.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-student" role="tabpanel" aria-labelledby="tab-student" tabindex="0" data-panel="student">
+      <div>
+        <h3>Everything about their course, in one place</h3>
+        <p class="lede">Students stop asking the office for their marks, their attendance, or their certificate. It is all self-serve.</p>
+        <ul class="plist">
+          <li><b>Assignments</b> — submit a Drive link and watch it move from Pending to Graded</li>
+          <li><b>Attendance log</b> — every Present, Absent and Leave entry, filterable by course</li>
+          <li><b>Course content</b> — lectures laid out week by week</li>
+          <li><b>Certificates</b> — download the moment the course is complete</li>
+        </ul>
+      </div>
+      <div class="frame">
+        <div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">/student/assignments</span></div>
+        <div class="frame-body">
+          <div class="pane-head"><div><h4>My assignments</h4><p class="micro">Web Development · Batch WD-12</p></div><span class="chip">Attendance 94%</span></div>
+          <div class="tasks">
+            <div class="task"><div class="body"><div class="t">Responsive layout with Flexbox</div><div class="m">Due 12 Sep</div></div><span class="mark">92</span><span class="pill ok">Graded</span></div>
+            <div class="task"><div class="body"><div class="t">JavaScript DOM exercises</div><div class="m">Due 15 Sep · submitted 14 Sep</div></div><span class="pill">Submitted</span></div>
+            <div class="task"><div class="body"><div class="t">Portfolio page — first draft</div><div class="m">Due 19 Sep</div></div><span class="pill">Pending</span></div>
+            <div class="task"><div class="body"><div class="t">CSS Grid worksheet</div><div class="m">Was due 9 Sep</div></div><span class="pill warn">Overdue</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

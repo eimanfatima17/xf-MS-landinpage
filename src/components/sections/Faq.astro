@@ -1,0 +1,17 @@
+---
+import { faqs } from '@/data/content';
+---
+
+<section id="faq">
+  <div class="shell">
+    <div class="head reveal">
+      <span class="section-label">Before you ask</span>
+      <h2>The questions every institute asks first.</h2>
+    </div>
+    <div class="faq">
+      {faqs.map(({ question, answer }) => (
+        <details><summary>{question}</summary><div class="a">{answer}</div></details>
+      ))}
+    </div>
+  </div>
+</section>

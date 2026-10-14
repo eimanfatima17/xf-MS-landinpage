@@ -1,0 +1,14 @@
+---
+import { clientLogos } from '@/data/content';
+---
+
+<div class="logo-band">
+  <p class="micro">Companies we've collaborated with</p>
+  <div class="marquee">
+    <div class="logo-track" id="logoTrack">
+      {clientLogos.map(({ src, alt }) => (
+        <div class="logo-item"><div class="logo-card"><img src={src} alt={alt} loading="lazy" onerror="this.closest('.logo-item').remove()"></div></div>
+      ))}
+    </div>
+  </div>
+</div>

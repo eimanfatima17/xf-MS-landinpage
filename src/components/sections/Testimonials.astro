@@ -1,0 +1,25 @@
+---
+import { testimonials } from '@/data/content';
+
+// three scrolling columns, filled in order
+const perColumn = Math.ceil(testimonials.length / 3);
+const columns = [0, 1, 2].map((i) => testimonials.slice(i * perColumn, (i + 1) * perColumn));
+---
+
+<section>
+  <div class="shell head reveal testi-head">
+    <span class="section-label">From institutes running it</span>
+    <h2>What changed after the switch.</h2>
+  </div>
+  <div class="testi-wall shell">
+    {columns.map((column, i) => (
+      <div class="testi-col">
+        <div class="testi-col-track" id={`testiCol${i + 1}`}>
+          {column.map(({ quote, initials, name, role }) => (
+            <div class="quote"><p>{quote}</p><div class="who"><span class="avatar">{initials}</span><div><div class="nm">{name}</div><div class="rl">{role}</div></div></div></div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

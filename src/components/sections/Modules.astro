@@ -1,0 +1,31 @@
+---
+import { moduleChips, modules } from '@/data/content';
+---
+
+<section id="modules">
+  <div class="marquee mq-bar">
+    <div class="marquee-track" id="modTrack">
+      {moduleChips.map(({ label, goto }) => (
+        <button type="button" class="mq-item" data-goto={goto}>{label}</button>
+      ))}
+    </div>
+  </div>
+
+  <div class="shell">
+    <div class="head reveal">
+      <span class="section-label">What is inside</span>
+      <h2>Seven groups of modules, one built-in assistant, one database underneath.</h2>
+      <p>Nothing is bolted on. A fee paid in the office updates the student's portal, the branch report and the net position in the same moment.</p>
+    </div>
+
+    <div class="mods">
+      {modules.map(({ group, title, description, goto }) => (
+        <div class="mod reveal" data-goto={goto} tabindex="0" role="button">
+          <div class="g">{group}</div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+---
+import { site, whatsappUrl } from '@/data/site';
+---
+
+<footer>
+  <div class="shell">
+    <div class="foot-grid foot-two">
+      <div>
+        <a href="#top" class="brand foot-brand"><span class="brand-mark"><img src="/assets/logo-mark.png" alt={`${site.name} logo`}></span>{site.name}</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+          <li><a href={whatsappUrl} target="_blank" rel="noopener">{site.phone}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© {site.year} {site.company}. All rights reserved.</span>
+  </div>
+</footer>

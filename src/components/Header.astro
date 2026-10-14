@@ -1,0 +1,29 @@
+---
+import { site, whatsappDemoUrl } from '@/data/site';
+
+const navLinks = [
+  { label: 'Portals', href: '#portals' },
+  { label: 'Modules', href: '#modules' },
+  { label: 'Features', href: '#finance' },
+  { label: 'Getting started', href: '#setup' },
+];
+const questions = { label: 'Questions', href: '#faq' };
+---
+
+<header id="hdr">
+  <div class="shell nav">
+    <a href="#top" class="brand"><span class="brand-mark"><img src="/assets/logo-mark.png" alt={`${site.name} logo`}></span>{site.name}</a>
+    <nav class="navlinks">
+      {navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <a class="btn btn-ghost" href={questions.href}>{questions.label}</a>
+    <a class="btn btn-primary" target="_blank" rel="noopener" href={whatsappDemoUrl}>Book a demo</a>
+    <button class="nav-toggle" id="navBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu">
+    <nav class="shell">
+      <a class="mobile-cta" target="_blank" rel="noopener" href={whatsappDemoUrl}>Book a demo</a>
+      {[...navLinks, questions].map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+  </div>
+</header>
